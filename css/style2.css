@@ -16,188 +16,72 @@ body {
     width: 100%;
     background-color: whitesmoke;
     text-align: left;
-    margin-top: 2%;
-    padding: 8px 5px 15px 10px;
+    margin: 5% 3% 0% 2%;
+    padding: 8px 15px 15px 2px;
 }
 
-.clearfix::after {
-    content: '';
-    display: block;
-    clear: both;
+span {
+    font-size: 24px;
 }
 
-.header__float1 {
-    width: 100%;
-    background-color: whitesmoke;
-    text-align: left;
-    margin-top: 2%;
-    padding: 8px 5px 15px 10px;
-}
-
-.header__float2 {
-    width: 100%;
-    background-color: whitesmoke;
-    text-align: left;
-    margin-top: 2%;
-    padding: 8px 5px 15px 10px;
-}
-
-.header__float3 {
-    width: 100%;
-    background-color: whitesmoke;
-    text-align: left;
-    margin-top: 2%;
-    padding: 8px 5px 15px 10px;
-}
-
-.rightsidebar {
-    width: 100%;
-    background-color: whitesmoke;
-    text-align: left;
-    margin-top: 2%;
-    padding: 8px 5px 15px 10px;
-} 
-
-.aside_block {
-    background-color: whitesmoke;
-    width: 100%;
-    text-align: left;
-    margin-top: 2%;
-} 
-
-.aside__link {
-    width: 100%;
+.content__sidebar__block__link {
     display: block;
     background-color: hsl(0, 0%, 90%);
     color: black;
-    text-align: left;
     text-decoration: none;
     font-size: 24px;
-    padding: 10px 16px 5px 20px;
 }
 
-@media (min-width: 769px) and (max-width: 1023px)  {
-
-    #wrapper {
-        overflow-y: hidden;
-    }
-    header {
-        margin-right: -5%;
-    }
-
-    .header__float1 {
-        float: left;
-        width: calc(100% - 50% - 80px);
-        margin-left: 4%; 
-        padding: 7px 4px 10px 11px;
-        margin-top: 2%;
-    }  
-
-    .header__float2 {
-        float: left;
-        width: calc(100% - 50% - 80px);
-        margin-left: 4%;
-        padding: 7px 4px 10px 11px;
-        margin-top: 2%; 
-    }
-
-    .header__float3 {
-        float: left;
-        width: 85%;
-        margin-left: 4%;
-        padding: 7px 4px 10px 11px;
-        margin-top: 2%;
-    }
+@media screen and (min-width: 768px) {
     
-    #content {
-        float: left;
-        width: calc(100% - 50% - 80px);
-        margin-left: 4%;
-        padding: 7px 4px 10px 11px;
-    }
-
-    .rightsidebar {
-        float: left;
-        width: calc(100% - 45% - 80px);
-        margin-left: 4%;
-        padding: 7px 4px 10px 11px;
-        margin-top: 2%;
-        position: relative;
-    }
-
-    .rightsidebar::after {
-        content: '';
-        position: absolute;
-        background-color:  whitesmoke;
-        height: 9999px;
-        top: 100%;
-        left: 0px;
-        right: 0px;
-    }
-}
-
-@media (min-width: 1024px) {
     #wrapper {
         overflow-y: hidden;  
-    }
+    } 
 
-    header {
-        margin-right: -20%;
-    }
-
-    .header__float1 {
-        float: left;
-        width: 25%;
+    .content__column {
+        column-count: 3;
+        column-gap: 5%;
+        column-rule-style: solid;
+        column-rule-width: 10px;
+        column-rule-color: hsl(0, 0%, 90%);
+        margin: 5% 2% 2% 2%;
         min-height: 25vh;
-        margin-left: 2%; 
-        padding: 7px 4px 10px 11px;
-        margin-top: 5%;
-    }  
-
-    .header__float2 {
-        float: left;
-        width: 25%;
-        min-height: 25vh;
-        margin-left: 2%;
-        padding: 7px 4px 10px 11px;
-        margin-top: 5%; 
     }
 
-    .header__float3 {
-        float: left;
-        width: 25%;
-        min-height: 25vh;
-        margin-left: 2%;
-        padding: 7px 4px 10px 11px;
-        margin-top: 5%;
-        margin-right: 2%;
-    }
-    
-    #content {
-        float: left;
+    .clearfix::after {
+        content: '';
+        display: block;
+        clear: both;
+    } 
+   
+    .content__block {
+        float: left; 
         width: 65%;
-        min-height: 50vh;
-        margin-left: 2%;
-        padding: 60px 4px 10px 11px;
+        min-height: 50vh; 
         margin-top: 5%;
-    }
-
-    .rightsidebar {
+        margin-left: 2%;
+    } 
+         
+    .content__sidebar {
         float: left;
         width: 30%;
-        margin-left: 0px;
-        padding: 60px 4px 10px 11px;
+        min-height: 50vh;
         margin-top: 5%;
-        position: relative;
+        margin-left: 2%;
     }
 
-    .rightsidebar::after {
-        content: '';
-        position: absolute;
-        background-color:  whitesmoke;
-        height: 9999px;
-        top: 100%;
-        left: 0px;
-        right: 0px;
+    .content__sidebar__header {
+        background-color: whitesmoke;
     }
+       
+    .content__sidebar__block {
+        margin: 0;
+        background-color: hsl(0, 0%, 90%);
+        height: 300px; 
+    }
+
+    .content__sidebar__block__link {
+        height: 25%;
+        padding: 0 2%; 
+    }  
 }
