@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-ul[class],
+ul,
 ol[class] {
   padding: 0;
 }
@@ -15,7 +15,7 @@ h2,
 h3,
 h4,
 p,
-ul[class],
+ul,
 ol[class],
 li,
 figure,
@@ -33,7 +33,7 @@ body {
   line-height: 1.5;
 }
 
-ul[class],
+ul,
 ol[class] {
   list-style: none;
 }

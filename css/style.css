@@ -1,0 +1,111 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color:hsl(0, 0%, 90%);
+}
+
+#wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+
+span {
+    font-size: 24px;
+}
+ 
+.mainColumnFirst,
+.mainColumnSecond,
+.mainColumnThird,
+.mainContent {
+    margin-bottom: 10px;
+    background-color:whitesmoke;
+    padding: 20px;
+} 
+
+.mainNavigationLinks {
+    background-color:hsl(0, 3%, 79%);
+    color: black; 
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mainColumn {
+        min-height: 30vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mainColumnFirst {
+        margin: 0 5px 10px 10px;
+    }
+
+    .mainColumnSecond {
+        margin: 0 5px 10px 5px;
+    }
+
+    .mainColumnThird {
+        margin: 0 10px 10px 5px;
+    }
+
+    .mainContent {
+        min-height: 65vh;
+        margin: 0 10px;
+        padding-top: 60px;
+    }
+
+    .mainNavigation {
+        padding-top: 60px;
+    }
+
+    .mainNavigationLinks {
+        font-size: 20px;
+        line-height: 2;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+ 
+    .mainColumn {
+        min-height: 40vh;
+    }
+
+    .mainColumnFirst {
+        margin: 10px 25px 30px 90px;
+    }
+    
+    .mainColumnSecond {
+        margin: 10px 25px 30px 5px;
+    }
+    
+    .mainColumnThird {
+        margin: 10px 90px 30px 5px;
+    }
+
+    .mainContent {
+        display: flex;
+        flex-direction: row;
+        min-height: 55vh;
+        margin: 0 90px 20px;
+        padding-top: 0;
+    }
+    .mainContentBlock {
+        width: 67%;
+    }
+   
+    .mainNavigation {
+        width: 33%;
+        padding-left: 15px;
+        padding-top: 0px;
+    }
+   
+    .mainNavigationLinks {
+        min-height: 40vh;
+        line-height: 3.6;
+    }
+}
